@@ -1,0 +1,260 @@
+:root {
+  --blue: #2196f3;
+  --black: #212121;
+  --grey: #757575;
+  --white: #ffffff;
+  --dark-blue: #2f303a;
+  --off-white: #f5f4fa;
+  --card-border-white: #eeeeee;
+  --white-60percent: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13.49%;
+  height: 80px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  color: var(--blue);
+}
+
+.right-navbar {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-items {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-information {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-items:hover,
+.contact-information:hover {
+  color: var(--blue);
+  transition-duration: 0.5s;
+}
+
+.main-section {
+  width: 100%;
+  height: 600px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-section button {
+  color: var(--white);
+  background-color: var(--blue);
+  border-radius: 4px;
+  box-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.15);
+  border-style: none;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.webstudio-selling-points {
+  margin-bottom: 100px;
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.webstudio-selling-points div {
+  width: 1170px;
+}
+
+.webstudio-selling-points ul {
+  display: flex;
+}
+
+.webstudio-selling-points ul li {
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.webstudio-selling-points h3 {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.webstudio-selling-points p {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 94px;
+}
+
+.what-we-do h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: var(--black);
+}
+
+.images-section {
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  align-items: center;
+}
+
+.our-team {
+  width: 100%;
+  background-color: var(--off-white);
+  padding-bottom: 94px;
+}
+
+.our-team-header {
+  padding-top: 94px;
+  padding-bottom: 50px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.member-card {
+  width: 270px;
+  height: 368px;
+  margin: 30px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+
+.our-team ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-style {
+  background-color: var(--dark-blue);
+  padding: 60px 0;
+}
+
+.address-column {
+  width: 230px;
+  margin-left: 150px;
+}
+
+.address-column ul {
+  margin: 0;
+  padding: 0;
+}
+
+.physical-address > a {
+  color: var(--white);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.faded-address-bar-items > a {
+  color: var(--white-60percent);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.selector-menu-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.selector-menu-buttons button {
+  cursor: pointer;
+  padding: 6px 26px;
+  color: var(--black);
+  background-color: var(--off-white);
+  border-radius: 4px;
+  border-style: hidden;
+  margin: 0px 8px;
+}
+
+.selector-menu-buttons button:hover {
+  color: var(--white);
+  background-color: var(--blue);
+  transition: 200ms;
+}
+
+.portfolio-showcase {
+  margin-top: 94px;
+}
+
+.portfolio-showcase-pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.portfolio-showcase-pictures li {
+  cursor: pointer;
+  margin: 0 30px 30px 30px;
+  border: 1px solid var(--card-border-white);
+}
+
+.portfolio-showcase-pictures li > h3,
+p {
+  padding-left: 24px;
+}
