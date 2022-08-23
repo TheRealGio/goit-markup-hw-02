@@ -6,6 +6,7 @@
   --dark-blue: #2f303a;
   --off-white: #f5f4fa;
   --card-border-white: #eeeeee;
+  --border-bottom-grey: #ececec;
   --white-60percent: rgba(255, 255, 255, 0.6);
 }
 
@@ -14,12 +15,39 @@ body {
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
 }
-
-ul {
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+address {
+  font-style: normal;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .header {
@@ -28,6 +56,7 @@ ul {
   align-items: center;
   padding: 0 13.49%;
   height: 80px;
+  border-bottom: 1px solid var(--border-bottom-grey);
 }
 
 .navbar {
@@ -35,6 +64,10 @@ ul {
   justify-content: space-between;
   align-items: center;
   width: 500px;
+}
+
+a.current-link {
+  color: var(--blue);
 }
 
 .nav-list {
@@ -60,43 +93,46 @@ ul {
   color: var(--black);
   font-size: 14px;
   font-weight: 500;
+  transition-duration: 0.5s;
 }
 
 .contact-information {
   color: var(--grey);
   font-size: 14px;
   font-weight: 500;
+  transition-duration: 0.5s;
 }
 
 .nav-items:hover,
 .contact-information:hover {
   color: var(--blue);
-  transition-duration: 0.5s;
 }
 
 .main-section {
-  width: 100%;
-  height: 600px;
+  padding: 200px 0;
   background-color: var(--dark-blue);
-  color: var(--white);
-  font-size: 44px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-weight: 900;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  text-align: center; /** Centering The Button not sure if correct **/
+}
+
+.main-banner {
+  color: var(--white);
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  padding-bottom: 30px;
 }
 
 .main-section button {
   color: var(--white);
   background-color: var(--blue);
   border-radius: 4px;
-  box-shadow: 0px, 4px, 4px, rgba(0, 0, 0, 0.15);
   border-style: none;
-  width: 200px;
-  height: 50px;
+  padding: 10px 20px;
+  line-height: 30px;
   font-weight: 700;
   font-size: 16px;
 }
@@ -180,6 +216,21 @@ ul {
   text-align: center;
 }
 
+.member-name {
+  font-weight: 500;
+  color: var(--black);
+  font-size: 16px;
+  line-height: 19px;
+  padding: 30px 60px 10px 60px;
+}
+
+.member-role {
+  color: var(--grey);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
 .our-team ul {
   display: flex;
   justify-content: center;
@@ -200,18 +251,16 @@ ul {
   padding: 0;
 }
 
-.physical-address > a {
+.address-bar-items > a:hover {
   color: var(--white);
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
 }
 
-.faded-address-bar-items > a {
+.address-bar-items > a {
   color: var(--white-60percent);
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
+  transition-duration: 0.5s;
 }
 
 .selector-menu-buttons {
@@ -228,12 +277,19 @@ ul {
   border-radius: 4px;
   border-style: hidden;
   margin: 0px 8px;
+  transition: 200ms;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Roboto", sans-serif;
 }
-
+li > .filter-current {
+  color: var(--white);
+  background-color: var(--blue);
+}
 .selector-menu-buttons button:hover {
   color: var(--white);
   background-color: var(--blue);
-  transition: 200ms;
 }
 
 .portfolio-showcase {
@@ -251,10 +307,26 @@ ul {
 .portfolio-showcase-pictures li {
   cursor: pointer;
   margin: 0 30px 30px 30px;
-  border: 1px solid var(--card-border-white);
 }
 
-.portfolio-showcase-pictures li > h3,
-p {
-  padding-left: 24px;
+.project-wrapper > h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+.project-wrapper > p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--grey);
+}
+
+.project-wrapper {
+  padding: 20px 24px;
+  border: 1px solid var(--card-border-white);
+  border-top: none;
 }

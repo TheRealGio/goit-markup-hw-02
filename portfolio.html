@@ -11,6 +11,10 @@
       content="WebStudio, Website, Developers, Create, Solutions, Web solutions, technology, Portfolio"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,27 +29,29 @@
     <header>
       <div class="header">
         <nav class="navbar">
-          <a href="index.html" class="logo">WebStudio</a>
-          <ul class="nav-list">
+          <a href="index.html" class="logo link">WebStudio</a>
+          <ul class="nav-list list">
             <li>
-              <a href="index.html" class="nav-items">Studio</a>
+              <a href="index.html" class="nav-items link">Studio</a>
             </li>
             <li>
-              <a href="portfolio.html" class="nav-items">Portfolio</a>
+              <a href="portfolio.html" class="nav-items current-link link"
+                >Portfolio</a
+              >
             </li>
             <li>
-              <a href="#" class="nav-items">Contacts</a>
+              <a href="#" class="nav-items link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <ul class="right-navbar">
+        <ul class="right-navbar list">
           <li>
-            <a href="mailto:info@devstudio.com" class="contact-information"
+            <a href="mailto:info@devstudio.com" class="contact-information link"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="contact-information"
+            <a href="tel:+380961111111" class="contact-information link"
               >+38 096 111 11 11</a
             >
           </li>
@@ -55,9 +61,9 @@
     <main>
       <section class="portfolio-showcase">
         <div>
-          <ul class="selector-menu-buttons">
+          <ul class="selector-menu-buttons list">
             <li>
-              <button type="button">All</button>
+              <button type="button" class="filter-current">All</button>
             </li>
             <li>
               <button type="button">Web-sites</button>
@@ -72,19 +78,19 @@
               <button type="button">Marketing</button>
             </li>
           </ul>
-        </div>
 
-        <div>
-          <ul class="portfolio-showcase-pictures">
-            <li style="border: 1px solid #eeeeee; width: 370px; height: 404px">
+          <ul class="portfolio-showcase-pictures list">
+            <li>
               <img
                 src="./images/portfolio-images/imgportfolio-technoduck.jpg"
                 width="370"
                 height="294"
                 alt="An image of a laptop with a website open on it"
               />
-              <h3 style="padding-left: 24px">Technoduck</h3>
-              <p style="">Web-site</p>
+              <div class="project-wrapper">
+                <h3>Technoduck</h3>
+                <p>Web-site</p>
+              </div>
             </li>
             <li>
               <img
@@ -93,8 +99,10 @@
                 height="294"
                 alt="An image of Steph Curry blocking Herbet Jone's shot"
               />
-              <h3>Poster New Orlean vs Golden Star</h3>
-              <p>Design</p>
+              <div class="project-wrapper">
+                <h3>Poster New Orlean vs Golden Star</h3>
+                <p>Design</p>
+              </div>
             </li>
             <li>
               <img
@@ -103,8 +111,10 @@
                 height="294"
                 alt="An image of a poster for a seafood restaurant with a Shark on it"
               />
-              <h3>Seafood Restaurant</h3>
-              <p>Apps</p>
+              <div class="project-wrapper">
+                <h3>Seafood Restaurant</h3>
+                <p>Apps</p>
+              </div>
             </li>
             <li>
               <img
@@ -113,8 +123,10 @@
                 height="294"
                 alt="An image of a black pair of headphones with a white background"
               />
-              <h3>Project Prime</h3>
-              <p>Marketing</p>
+              <div class="project-wrapper">
+                <h3>Project Prime</h3>
+                <p>Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -123,8 +135,10 @@
                 height="294"
                 alt="A picture of a white box and a redish/pink box"
               />
-              <h3>Project Boxes</h3>
-              <p>Apps</p>
+              <div class="project-wrapper">
+                <h3>Project Boxes</h3>
+                <p>Apps</p>
+              </div>
             </li>
             <li>
               <img
@@ -133,8 +147,10 @@
                 height="294"
                 alt="Picture of Computer screen"
               />
-              <h3>Inspiration has no Borders</h3>
-              <p>Web-site</p>
+              <div class="project-wrapper">
+                <h3>Inspiration has no Borders</h3>
+                <p>Web-site</p>
+              </div>
             </li>
             <li>
               <img
@@ -143,8 +159,10 @@
                 height="294"
                 alt="Picture of a book with the words limited edition printed on it"
               />
-              <h3>Limited Edition</h3>
-              <p>Design</p>
+              <div class="project-wrapper">
+                <h3>Limited Edition</h3>
+                <p>Design</p>
+              </div>
             </li>
             <li>
               <img
@@ -153,8 +171,10 @@
                 height="294"
                 alt="Picture of A Label with the words Label Tag written on it"
               />
-              <h3>Project LAB</h3>
-              <p>Marketing</p>
+              <div class="project-wrapper">
+                <h3>Project LAB</h3>
+                <p>Marketing</p>
+              </div>
             </li>
             <li>
               <img
@@ -163,8 +183,10 @@
                 height="294"
                 alt="A picture of someone working on a laptop"
               />
-              <h3>Growing Business</h3>
-              <p>Apps</p>
+              <div class="project-wrapper">
+                <h3>Growing Business</h3>
+                <p>Apps</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -172,17 +194,21 @@
     </main>
     <footer class="footer-style">
       <div class="address-column">
-        <a href="index.html" class="logo">WebStudio</a>
+        <a href="index.html" class="logo link">WebStudio</a>
         <address>
-          <ul>
-            <li class="physical-address">
-              <a href="#">695 Park Ave, New York, NY 10065, United States</a>
+          <ul class="list">
+            <li class="address-bar-items">
+              <a href="#" class="link"
+                >695 Park Ave, New York, NY 10065, United States</a
+              >
             </li>
-            <li class="faded-address-bar-items">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <li class="address-bar-items">
+              <a href="mailto:info@devstudio.com" class="link"
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="faded-address-bar-items">
-              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <li class="address-bar-items">
+              <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
         </address>

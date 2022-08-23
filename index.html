@@ -14,8 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link href="css/style.css" rel="stylesheet" />
     <title>WebStudio</title>
@@ -24,27 +28,27 @@
   <header>
     <div class="header">
       <nav class="navbar">
-        <a href="index.html" class="logo">WebStudio</a>
-        <ul class="nav-list">
+        <a href="index.html" class="logo link">WebStudio</a>
+        <ul class="nav-list list">
           <li>
-            <a href="#" class="nav-items">Studio</a>
+            <a href="#" class="nav-items current-link link">Studio</a>
           </li>
           <li>
-            <a href="portfolio.html" class="nav-items">Portfolio</a>
+            <a href="portfolio.html" class="nav-items link">Portfolio</a>
           </li>
           <li>
-            <a href="#" class="nav-items">Contacts</a>
+            <a href="#" class="nav-items link">Contacts</a>
           </li>
         </ul>
       </nav>
-      <ul class="right-navbar">
+      <ul class="right-navbar list">
         <li>
-          <a href="mailto:info@devstudio.com" class="contact-information"
+          <a href="mailto:info@devstudio.com" class="contact-information link"
             >info@devstudio.com</a
           >
         </li>
         <li>
-          <a href="tel:+380961111111" class="contact-information"
+          <a href="tel:+380961111111" class="contact-information link"
             >+38 096 111 11 11</a
           >
         </li>
@@ -65,7 +69,7 @@
     </section>
     <section class="webstudio-selling-points">
       <div>
-        <ul>
+        <ul class="list">
           <li>
             <h3>ATTENTION TO DETAILS</h3>
             <p>
@@ -100,7 +104,7 @@
     <section>
       <div class="what-we-do">
         <h2>What we do</h2>
-        <ul class="images-section">
+        <ul class="images-section list">
           <li>
             <img
               src="./images/imglaptop-left.jpg"
@@ -131,7 +135,7 @@
     <section class="our-team">
       <div>
         <h2 class="our-team-header">Our Team</h2>
-        <ul>
+        <ul class="list">
           <li class="member-card">
             <img
               src="./images/imgguy-with-rdj-glasses.jpg"
@@ -178,17 +182,21 @@
   </main>
   <footer class="footer-style">
     <div class="address-column">
-      <a href="index.html" class="logo">WebStudio</a>
+      <a href="index.html" class="logo link">WebStudio</a>
       <address>
-        <ul>
-          <li class="physical-address">
-            <a href="#">695 Park Ave, New York, NY 10065, United States</a>
+        <ul class="list">
+          <li class="address-bar-items">
+            <a href="#" class="link"
+              >695 Park Ave, New York, NY 10065, United States</a
+            >
           </li>
-          <li class="faded-address-bar-items">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="address-bar-items">
+            <a href="mailto:info@devstudio.com" class="link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="faded-address-bar-items">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="address-bar-items">
+            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
       </address>
